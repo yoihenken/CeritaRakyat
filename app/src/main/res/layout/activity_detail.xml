@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_detail_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_leg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/horizontal_margin"
+            android:src="@drawable/lutung"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="@string/lorem_title"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            style="@style/Title"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_content"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            style="@style/Content"/>
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/From"
+            android:text="@string/lorem_title"
+            android:layout_marginBottom="@dimen/vertical_margin"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
